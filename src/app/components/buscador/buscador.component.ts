@@ -27,9 +27,5 @@ export class BuscadorComponent implements OnInit {
   	});
   }
 
-  verHeroe(idx:number) {
-    this.router.navigate( [ 'heroe', idx] ) ;
-
-  }
-
+  
 }

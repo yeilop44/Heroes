@@ -12,14 +12,5 @@
 </div>
 
 <div class="card-columns animated fadeIn fast">
-	<div *ngFor="let heroe of heroes; let i = index " class="card">
-	   <img class="card-img-top" src="{{ heroe.img }}" alt="Card image cap">
-	    <div class="card-body">
-	      <h5 class="card-title">{{ heroe.nombre }}</h5>
-	      <p class="card-text">{{ heroe.bio }}</p>
-	      <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
-	      
-	      <!--<a [routerLink]="['/heroe',i]">ver mas</a>-->
-    	</div>
-	</div>
+	<app-heroe-tarjeta [index]="heroe.idx" [heroe]="heroe" *ngFor="let heroe of heroes">	</app-heroe-tarjeta>
 </div>
